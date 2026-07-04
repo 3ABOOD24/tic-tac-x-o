@@ -14,11 +14,11 @@ body {
 }
 
 .container {
-    width: 370px;
-    height: 520px;
+    width: 385px;
+    height: 585px;
     background-color: #FEFEFE;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.289);
-    margin-top: 55px;
+    margin-top: 68px;
     border-radius: 15px;
     text-align: center;
     display: flex;
@@ -26,7 +26,7 @@ body {
     align-items: center;
 }
 h1{
-    margin-top: 30px;
+    margin-top: 25px;
 }
 .score{
     display: flex;
@@ -61,4 +61,40 @@ h1{
 .message {
     color: #636E72;
     font-weight: bold;
+}
+.tic-tac {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    margin: 20px;
+}
+.box {
+    background-color: #EFEFEF;
+    width: 85px;
+    height: 85px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.buttons button{
+    padding: 13px 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+.button1 {
+    background-color: #6D60D4;
+}
+.button2 {
+    background-color: #96E2D5;
+}
+.button3 {
+    background-color: #D43031;
 }

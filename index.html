@@ -12,30 +12,30 @@
         <div class="score">
             <span class="player1">
                 <p class="player">player1</p>
-                <p class="scores">0</p>
+                <p class="scores" id="score1">0</p>
             </span>
             <p class="vs">VS</p>
             <span class="player1">
                 <p class="player">player2</p>
-                <p class="scores">0</p>
+                <p class="scores" id="score2">0</p>
             </span>
         </div>
-        <p class="message">Click "New Game" to start!</p>
+        <p id="message">Click "New Game" to start!</p>
         <div class="tic-tac">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>
+            <div class="box" id="6"></div>
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div>
+            <div class="box" id="9"></div>
         </div>
         <div class="buttons">
-            <button class="button1">NEW GAME</button>
-            <button class="button2">NEW ROUND</button>
-            <button class="button3">RESTART</button>
+            <button class="button1" onclick="newGame()">NEW GAME</button>
+            <button class="button2" disabled>NEW ROUND</button>
+            <button class="button3" onclick="restartGame()">RESTART</button>
         </div>
     </div>
 </body>

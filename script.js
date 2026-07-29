@@ -23,10 +23,13 @@ function restart(){
     playing = "player1"
     score1.innerText = "0"
     score2.innerText = "0"
+    player1.score = "0"
+    player2.score = "0"
     board.fill("")
     boxes.forEach((box) => {
         box.innerText = ""
     })
+    message.innerText = ''
 }
 function round(){
     playing = "player1"

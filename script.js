@@ -1,8 +1,7 @@
 const message = document.getElementById("message")
 const score1 = document.querySelector("#score1")
 const score2 = document.querySelector("#score2")
-const boxes = document.querySelectorAll(".box") 
-const btn1 = document.querySelector(".button1")
+const boxes = document.querySelectorAll(".box")
 const btn2 = document.querySelector(".button2")
 const btn3 = document.querySelector(".button3")
 const player1 = { name:"player1", Symbol:"X", score: 0}
@@ -32,7 +31,6 @@ function restart(){
     message.innerText = ''
 }
 function round(){
-    playing = "player1"
     board.fill("")
     boxes.forEach((box) => {
         box.innerText = ""

@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tic-tac-toe</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="card">
+        <div class="innercard">
+            <div class="p1">
+                <h1>Player 1</h1>
+                <input type="text" placeholder="enter player1 name">
+                <input type="text" maxlength="1" class="xo">
+            </div>
+            <div class="p2">
+                <h1>Player 2</h1>
+                <input type="text" placeholder="enter player2 name">
+                <input type="text" maxlength="1" class="xo">
+            </div>
+        </div>
+        <button class="save">save</button>
+        <p class="alert"></p>
+    </div>
     <div class="container">
         <h1>Tic Tac Toe</h1>
         <div class="score">
@@ -34,9 +52,10 @@
         </div>
         <div class="buttons">
             <button class="button3">NEW GAME</button>
-            <button class="button2" >NEW ROUND</button>
+            <button class="button2">NEW ROUND</button>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

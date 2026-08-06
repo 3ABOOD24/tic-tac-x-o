@@ -9,50 +9,52 @@
 </head>
 
 <body>
-    <div class="card">
-        <div class="innercard">
-            <div class="p1">
-                <h1>Player 1</h1>
-                <input type="text" placeholder="enter player1 name">
-                <input type="text" maxlength="1" class="xo">
+    <div class="full">
+        <div class="card">
+            <div class="innercard">
+                <div class="p1">
+                    <h1>Player 1</h1>
+                    <input type="text" placeholder="enter player1 name">
+                    <input type="text" maxlength="1" class="xo">
+                </div>
+                <div class="p2">
+                    <h1>Player 2</h1>
+                    <input type="text" placeholder="enter player2 name">
+                    <input type="text" maxlength="1" class="xo">
+                </div>
             </div>
-            <div class="p2">
-                <h1>Player 2</h1>
-                <input type="text" placeholder="enter player2 name">
-                <input type="text" maxlength="1" class="xo">
+            <button class="save">save</button>
+            <p class="alert"></p>
+        </div>
+        <div class="container">
+            <h1>Tic Tac Toe</h1>
+            <div class="score">
+                <span class="player1">
+                    <p class="player">player1</p>
+                    <p class="scores" id="score1">0</p>
+                </span>
+                <p class="vs">VS</p>
+                <span class="player2">
+                    <p class="player">player2</p>
+                    <p class="scores" id="score2">0</p>
+                </span>
             </div>
-        </div>
-        <button class="save">save</button>
-        <p class="alert"></p>
-    </div>
-    <div class="container">
-        <h1>Tic Tac Toe</h1>
-        <div class="score">
-            <span class="player1">
-                <p class="player">player1</p>
-                <p class="scores" id="score1">0</p>
-            </span>
-            <p class="vs">VS</p>
-            <span class="player2">
-                <p class="player">player2</p>
-                <p class="scores" id="score2">0</p>
-            </span>
-        </div>
-        <p id="message">Click "New Game" to start!</p>
-        <div class="tic-tac">
-            <div class="box" data-cell-index="0"></div>
-            <div class="box" data-cell-index="1"></div>
-            <div class="box" data-cell-index="2"></div>
-            <div class="box" data-cell-index="3"></div>
-            <div class="box" data-cell-index="4"></div>
-            <div class="box" data-cell-index="5"></div>
-            <div class="box" data-cell-index="6"></div>
-            <div class="box" data-cell-index="7"></div>
-            <div class="box" data-cell-index="8"></div>
-        </div>
-        <div class="buttons">
-            <button class="button3">NEW GAME</button>
-            <button class="button2">NEW ROUND</button>
+            <p id="message">Click "New Game" to start!</p>
+            <div class="tic-tac">
+                <div class="box" data-cell-index="0"></div>
+                <div class="box" data-cell-index="1"></div>
+                <div class="box" data-cell-index="2"></div>
+                <div class="box" data-cell-index="3"></div>
+                <div class="box" data-cell-index="4"></div>
+                <div class="box" data-cell-index="5"></div>
+                <div class="box" data-cell-index="6"></div>
+                <div class="box" data-cell-index="7"></div>
+                <div class="box" data-cell-index="8"></div>
+            </div>
+            <div class="buttons">
+                <button class="button3">NEW GAME</button>
+                <button class="button2">NEW ROUND</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

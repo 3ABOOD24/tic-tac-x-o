@@ -7,8 +7,15 @@ const score2 = document.querySelector("#score2")
 const boxes = document.querySelectorAll(".box")
 const btn2 = document.querySelector(".button2")
 const btn3 = document.querySelector(".button3")
-const player1 = { name: "player1", Symbol: "X", score: 0 }
-const player2 = { name: "player2", Symbol: "O", score: 0 }
+const inp1 = document.querySelector(".inp1")
+const inp2 = document.querySelector(".inp2")
+const pox = document.querySelector("#pox")
+const pxo = document.querySelector("#pxo")
+const save = document.querySelector(".save")
+const p1 = document.querySelector(".p1h1")
+const p2 = document.querySelector(".p2h1")
+const player1 = { name: `player1`, Symbol: `X`, score: 0 }
+const player2 = { name: `player2`, Symbol: `O`, score: 0 }
 let playing = "player1"
 const board = ["", "", "", "", "", "", "", "", ""]
 const winningConditions = [
@@ -21,6 +28,17 @@ const winningConditions = [
     [0, 4, 8],
     [2, 4, 6]
 ];
+function saved(){
+    player1.name = `${inp1.value}`
+    player2.name = `${inp2.value}`
+    player1.Symbol = `${pox.value}`
+    player2.Symbol = `${pxo.value}`
+    p1.innerHTML = `${player1.name}`
+    p2.innerHTML = `${player2.name}`
+    message.innerText = 'play!'
+    card.style.display = 'none'
+    container.style.display = 'flex'
+}
 function restart() {
     playing = "player1"
     score1.innerText = "0"
@@ -85,3 +103,4 @@ boxes.forEach((box, index) => {
 })
 btn3.addEventListener("click", restart)
 btn2.addEventListener("click", round)
+save.addEventListener("click", saved)

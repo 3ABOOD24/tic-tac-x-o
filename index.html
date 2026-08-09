@@ -14,13 +14,13 @@
             <div class="innercard">
                 <div class="p1">
                     <h1>Player 1</h1>
-                    <input type="text" placeholder="enter player1 name">
-                    <input type="text" maxlength="1" class="xo">
+                    <input type="text" placeholder="enter player1 name" class="inp1" >
+                    <input type="text" maxlength="1" class="xo" id="pox" oninput="this.value = this.value.toUpperCase().replace(/[^XO]/g, '')">
                 </div>
                 <div class="p2">
                     <h1>Player 2</h1>
-                    <input type="text" placeholder="enter player2 name">
-                    <input type="text" maxlength="1" class="xo">
+                    <input type="text" placeholder="enter player2 name"  class="inp2" >
+                    <input type="text" maxlength="1" class="xo" id="pxo" oninput="this.value = this.value.toUpperCase().replace(/[^XO]/g, '')">
                 </div>
             </div>
             <button class="save">save</button>
@@ -30,12 +30,12 @@
             <h1>Tic Tac Toe</h1>
             <div class="score">
                 <span class="player1">
-                    <p class="player">player1</p>
+                    <p class="player" class="p1h1">player1</p>
                     <p class="scores" id="score1">0</p>
                 </span>
                 <p class="vs">VS</p>
                 <span class="player2">
-                    <p class="player">player2</p>
+                    <p class="player" class="p2h1">player2</p>
                     <p class="scores" id="score2">0</p>
                 </span>
             </div>

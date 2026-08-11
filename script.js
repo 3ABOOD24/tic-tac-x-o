@@ -12,8 +12,8 @@ const inp2 = document.querySelector(".inp2")
 const pox = document.querySelector("#pox")
 const pxo = document.querySelector("#pxo")
 const save = document.querySelector(".save")
-const p1 = document.querySelector(".p1h1")
-const p2 = document.querySelector(".p2h1")
+const p1 = document.querySelector("#p1h1")
+const p2 = document.querySelector("#p2h1")
 const player1 = { name: `player1`, Symbol: `X`, score: 0 }
 const player2 = { name: `player2`, Symbol: `O`, score: 0 }
 let playing = "player1"
@@ -38,6 +38,10 @@ function saved(){
     message.innerText = 'play!'
     card.style.display = 'none'
     container.style.display = 'flex'
+    inp1.value = ""
+    inp2.value = ""
+    pox.value = ""
+    pxo.value = ""
 }
 function restart() {
     playing = "player1"
